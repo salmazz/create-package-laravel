@@ -1,0 +1,26 @@
+{
+    "name": "salmazz/todolist",
+    "description": "test package laravel",
+    "authors": [
+        {
+            "name": "salma emad"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravelcollective/html": "^5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "salmazz\\todolist\\TodolistServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Salmazz\\Todolist\\": "src/"
+        }
+    }
+}
+
