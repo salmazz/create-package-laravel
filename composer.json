@@ -8,18 +8,21 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "laravelcollective/html": "^5.5"
+        "php": "^7.4|^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "laravelcollective/html": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Salmazz\\Todolist\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "salmazz\\todolist\\TodolistServiceProvider"
             ]
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Salmazz\\Todolist\\": "src/"
         }
     }
 }
